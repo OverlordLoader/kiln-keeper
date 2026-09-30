@@ -1,3 +1,7 @@
+## 2026-09-30 - Declare the inherited initializer override
+
+Native compilation requires override on KilnScene convenience init(). Added the required declaration without changing scene setup.
+
 ## 2026-09-30 — Unsigned native simulator verification
 
 Added a free public macOS compile/startup workflow, evidence capture, and a shared Xcode scheme where missing. Supports opening the existing game on Henry's MacBook without App Store submission. No paid service, signing or purchase. Build status is reported separately from full gameplay acceptance.

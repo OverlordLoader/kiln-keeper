@@ -18,7 +18,7 @@ final class KilnScene: SKScene {
     private var lastSignature = ""
     private var elapsed: TimeInterval = 0
 
-    convenience init() {
+    override convenience init() {
         self.init(size: CGSize(width: 390, height: 700))
         scaleMode = .resizeFill
         backgroundColor = SKColor(white: 0.03, alpha: 1.0)
