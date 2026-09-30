@@ -89,13 +89,12 @@ def main():
         if "UIApplication.shared.open" in src:
             check(False, f"{rel}: external URL open() call (no web links allowed)")
 
-    # .github/workflows is deliberately NOT in the repo (GitHub only lets the
-    # repo owner grant the `workflows` permission). The release workflow lives
-    # at ~/workspace/your_files/kilnkeeper-apple-release.yml and Henry uploads
-    # it via the GitHub web UI when he's ready for TestFlight.
-    gh_workflows = ROOT / ".github" / "workflows"
-    check(not gh_workflows.exists(),
-          "no .github/workflows in the repo (blocked: owner-only permission)")
+    workflow = ROOT / ".github" / "workflows" / "apple-release.yml"
+    check(workflow.exists(), "versioned release workflow exists")
+    if workflow.exists():
+        wf = workflow.read_text()
+        check("environment: app-store-release-kilnkeeper" in wf, "dedicated release environment")
+        check("APP_BUNDLE_ID: app.kilnkeeper.game" in wf, "workflow bundle identity")
 
     if failures:
         print(f"\nKILNKEEPER-RELEASE-CHECK: {len(failures)} FAILURE(S)")

@@ -19,3 +19,11 @@
 - Release pipeline: deterministic pbxproj generator, apple-release-check.py /
   apple-release.py scripts, workflow YAML for manual upload
   (`~/workspace/your_files/kilnkeeper-apple-release.yml`).
+
+
+## September 30, 2026 - Independent source verification
+
+Declared the app-scoped UserDefaults required-reason API (CA92.1), based on the app's actual preferences and local save calls. This does not certify App Store privacy answers or third-party SDK behavior. Final signed archive privacy reports and actual-device/network behavior remain release gates.
+Fixed unquoted spaced display names in both the Xcode project and its generator.
+
+Versioned the previously missing release workflow with pinned actions, app-specific identity/environment, manual main-branch signing and upload disabled by default. Removed the incorrect requirement that workflows must stay outside GitHub. Signing environments/secrets, account budget and actual Mac builds remain unverified; nothing dispatched.

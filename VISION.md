@@ -57,3 +57,11 @@ transitions, never in the first session, never for Remove-Ads owners.
 
 ## Changelog
 - 2026-09-29: v1.0 initial build — full game, monetization, release pipeline.
+
+
+## September 30, 2026 - Independent source verification
+
+Declared the app-scoped UserDefaults required-reason API (CA92.1), based on the app's actual preferences and local save calls. This does not certify App Store privacy answers or third-party SDK behavior. Final signed archive privacy reports and actual-device/network behavior remain release gates.
+Fixed unquoted spaced display names in both the Xcode project and its generator.
+
+Versioned the previously missing release workflow with pinned actions, app-specific identity/environment, manual main-branch signing and upload disabled by default. Removed the incorrect requirement that workflows must stay outside GitHub. Signing environments/secrets, account budget and actual Mac builds remain unverified; nothing dispatched.
