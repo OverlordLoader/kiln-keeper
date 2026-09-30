@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000000000000000000000001 /* KilnKeeperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000011 /* KilnKeeperApp.swift */; };
+		000000000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000012 /* ContentView.swift */; };
+		000000000000000000000003 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000013 /* Models.swift */; };
+		000000000000000000000004 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000014 /* GameState.swift */; };
+		000000000000000000000005 /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000015 /* Haptics.swift */; };
+		000000000000000000000006 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000016 /* SoundManager.swift */; };
+		000000000000000000000007 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000017 /* Palette.swift */; };
+		000000000000000000000008 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000018 /* StoreManager.swift */; };
+		000000000000000000000009 /* AdsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000019 /* AdsManager.swift */; };
+		00000000000000000000000A /* GlassRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000001A /* GlassRenderer.swift */; };
+		00000000000000000000000B /* KilnScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000001B /* KilnScene.swift */; };
+		00000000000000000000000C /* KilnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000001C /* KilnView.swift */; };
+		00000000000000000000000D /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000001D /* InventoryView.swift */; };
+		00000000000000000000000E /* UpgradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000001E /* UpgradeView.swift */; };
+		00000000000000000000000F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000001F /* SettingsView.swift */; };
+		000000000000000000000010 /* AwaySummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000020 /* AwaySummaryView.swift */; };
+		000000000000000000000029 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 000000000000000000000028 /* GoogleMobileAds */; };
+		000000000000000000000023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000025 /* Assets.xcassets */; };
+		000000000000000000000024 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000026 /* PrivacyInfo.xcprivacy */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000011 /* KilnKeeperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KilnKeeperApp.swift; sourceTree = "<group>"; };
+		000000000000000000000012 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		000000000000000000000013 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		000000000000000000000014 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		000000000000000000000015 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
+		000000000000000000000016 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		000000000000000000000017 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
+		000000000000000000000018 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		000000000000000000000019 /* AdsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsManager.swift; sourceTree = "<group>"; };
+		00000000000000000000001A /* GlassRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassRenderer.swift; sourceTree = "<group>"; };
+		00000000000000000000001B /* KilnScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KilnScene.swift; sourceTree = "<group>"; };
+		00000000000000000000001C /* KilnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KilnView.swift; sourceTree = "<group>"; };
+		00000000000000000000001D /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
+		00000000000000000000001E /* UpgradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeView.swift; sourceTree = "<group>"; };
+		00000000000000000000001F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		000000000000000000000020 /* AwaySummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwaySummaryView.swift; sourceTree = "<group>"; };
+		000000000000000000000021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000000000000000000000025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		000000000000000000000026 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		000000000000000000000022 /* KilnKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KilnKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000000000000000000000030 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000029 /* GoogleMobileAds in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00000000000000000000002A = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000002B /* KilnKeeper */,
+				00000000000000000000002E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00000000000000000000002B /* KilnKeeper */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000011,
+				000000000000000000000012,
+				000000000000000000000021,
+				000000000000000000000025,
+				000000000000000000000026,
+				00000000000000000000002C,
+				00000000000000000000002D,
+			);
+			path = KilnKeeper;
+			sourceTree = "<group>";
+		};
+		00000000000000000000002C /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000013,
+				000000000000000000000014,
+				000000000000000000000015,
+				000000000000000000000016,
+				000000000000000000000017,
+				000000000000000000000018,
+				000000000000000000000019,
+				00000000000000000000001A,
+				00000000000000000000001B,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		00000000000000000000002D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000001C,
+				00000000000000000000001D,
+				00000000000000000000001E,
+				00000000000000000000001F,
+				000000000000000000000020,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		00000000000000000000002E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000022 /* KilnKeeper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000000000032 /* KilnKeeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000039 /* Build configuration list for PBXNativeTarget "KilnKeeper" */;
+			buildPhases = (
+				00000000000000000000002F /* Sources */,
+				000000000000000000000030 /* Frameworks */,
+				000000000000000000000031 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KilnKeeper;
+			productName = KilnKeeper;
+			productReference = 000000000000000000000022 /* KilnKeeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000033 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					000000000000000000000032 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 000000000000000000000038 /* Build configuration list for PBXProject "KilnKeeper" */;
+			compatibilityVersion = "Xcode 16.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00000000000000000000002A;
+			packageReferences = (
+				000000000000000000000027 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
+			productRefGroup = 00000000000000000000002E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000000000000000000032 /* KilnKeeper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000000000000000000000031 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000023 /* Assets.xcassets in Resources */,
+				000000000000000000000024 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00000000000000000000002F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000001 /* KilnKeeperApp.swift in Sources */,
+				000000000000000000000002 /* ContentView.swift in Sources */,
+				000000000000000000000003 /* Models.swift in Sources */,
+				000000000000000000000004 /* GameState.swift in Sources */,
+				000000000000000000000005 /* Haptics.swift in Sources */,
+				000000000000000000000006 /* SoundManager.swift in Sources */,
+				000000000000000000000007 /* Palette.swift in Sources */,
+				000000000000000000000008 /* StoreManager.swift in Sources */,
+				000000000000000000000009 /* AdsManager.swift in Sources */,
+				00000000000000000000000A /* GlassRenderer.swift in Sources */,
+				00000000000000000000000B /* KilnScene.swift in Sources */,
+				00000000000000000000000C /* KilnView.swift in Sources */,
+				00000000000000000000000D /* InventoryView.swift in Sources */,
+				00000000000000000000000E /* UpgradeView.swift in Sources */,
+				00000000000000000000000F /* SettingsView.swift in Sources */,
+				000000000000000000000010 /* AwaySummaryView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		000000000000000000000027 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		000000000000000000000028 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 000000000000000000000027 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCBuildConfiguration section */
+		000000000000000000000034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		000000000000000000000035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		000000000000000000000036 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "KilnKeeper/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Kiln Keeper;
+				INFOPLIST_KEY_LSRequiresIPhoneOS = YES;
+				INFOPLIST_KEY_UIDeviceFamily = "1,2";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.kilnkeeper.game;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		000000000000000000000037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "KilnKeeper/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Kiln Keeper;
+				INFOPLIST_KEY_LSRequiresIPhoneOS = YES;
+				INFOPLIST_KEY_UIDeviceFamily = "1,2";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.kilnkeeper.game;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000000000000000000000038 /* Build configuration list for PBXProject "KilnKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000034 /* Debug */,
+				000000000000000000000035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000000000000000039 /* Build configuration list for PBXNativeTarget "KilnKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000036 /* Debug */,
+				000000000000000000000037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000000000000033 /* Project object */;
+}
