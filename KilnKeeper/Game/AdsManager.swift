@@ -92,7 +92,7 @@ final class AdsManager: NSObject, ObservableObject {
         rewardEarned = false
         pendingRewardCompletion = completion
         rewardedReady = false
-        ad.present(from: vc) { [weak self] in
+        ad.present(fromRootViewController: vc) { [weak self] in
             self?.rewardEarned = true
         }
     }
@@ -137,7 +137,7 @@ final class AdsManager: NSObject, ObservableObject {
         d.set(Date().timeIntervalSince1970, forKey: Keys.lastInterstitial)
         pendingInterstitialCompletion = completion
         interstitialReady = false
-        ad.present(from: vc)
+        ad.present(fromRootViewController: vc)
     }
 
     // MARK: - Helpers

@@ -1,3 +1,7 @@
+## 2026-09-30 - Match installed advertising SDK labels
+
+The initializer repair compiled; the next compiler pass exposed two present(from:) calls against Google Mobile Ads11. Changed them to fromRootViewController: as required by that installed major version. This is distinct from the resolved initializer failure.
+
 ## 2026-09-30 - Declare the inherited initializer override
 
 Native compilation requires override on KilnScene convenience init(). Added the required declaration without changing scene setup.
