@@ -52,6 +52,20 @@ def main():
         proof["launch"] = run("xcrun", "simctl", "launch", device_id, bundle).strip()
         time.sleep(8)
         run("xcrun", "simctl", "io", device_id, "screenshot", str(OUTPUT / "startup.png"))
+        # A successful launch request can still be followed by an immediate
+        # crash. Preserve the screenshot, but fail if its process has exited.
+        pid = int(proof["launch"].rsplit(":", 1)[1].strip())
+        try:
+            os.kill(pid, 0)
+        except ProcessLookupError:
+            with (OUTPUT / "startup-crash.log").open("w") as log:
+                subprocess.run([
+                    "xcrun", "simctl", "spawn", device_id, "log", "show",
+                    "--last", "2m", "--style", "compact", "--predicate",
+                    'process == "KilnKeeper"',
+                ], stdout=log, stderr=subprocess.STDOUT, timeout=45, check=False)
+            raise RuntimeError("KilnKeeper exited after launch; screenshot is not app acceptance")
+        proof["process_alive_after_startup"] = True
         proof.update(status="startup_captured", bundle_id=bundle, simulator=device["name"])
         (OUTPUT / "INSTALL.txt").write_text(
             "Requires a Mac with Xcode and a compatible iOS Simulator. Unzip KilnKeeper-Simulator.zip.\n"

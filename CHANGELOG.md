@@ -1,3 +1,7 @@
+## 2026-09-30 - Guard scene setup before state injection
+
+The first compiling run returned to the simulator Home screen, so startup acceptance failed despite the green launch command. Guard layout against SpriteKit size callbacks before KilnView injects GameState; didMove still performs the bound layout. Strengthened the smoke check to require the launched process to remain alive and capture app logs if it exits. This is a bounded runtime repair requiring fresh screenshot verification.
+
 ## 2026-09-30 - Match installed advertising SDK labels
 
 The initializer repair compiled; the next compiler pass exposed two present(from:) calls against Google Mobile Ads11. Changed them to fromRootViewController: as required by that installed major version. This is distinct from the resolved initializer failure.
