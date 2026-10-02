@@ -18,7 +18,7 @@ final class KilnScene: SKScene {
     private var lastSignature = ""
     private var elapsed: TimeInterval = 0
 
-    convenience init() {
+    override convenience init() {
         self.init(size: CGSize(width: 390, height: 700))
         scaleMode = .resizeFill
         backgroundColor = SKColor(white: 0.03, alpha: 1.0)
@@ -35,6 +35,9 @@ final class KilnScene: SKScene {
     // MARK: - Layout
 
     private func layout() {
+        // SpriteKit may notify a size change during initialization, before
+        // KilnView injects game. didMove performs the first bound layout.
+        guard game != nil else { return }
         removeAllChildren()
         slotNodes = []
         shelfBoards = []
