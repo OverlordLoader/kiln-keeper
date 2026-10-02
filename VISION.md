@@ -65,3 +65,7 @@ Declared the app-scoped UserDefaults required-reason API (CA92.1), based on the 
 Fixed unquoted spaced display names in both the Xcode project and its generator.
 
 Versioned the previously missing release workflow with pinned actions, app-specific identity/environment, manual main-branch signing and upload disabled by default. Removed the incorrect requirement that workflows must stay outside GitHub. Signing environments/secrets, account budget and actual Mac builds remain unverified; nothing dispatched.
+
+## October 2, 2026 - Review PR #1 merged
+
+- 2026-10-02: PR #1 "fix: prepare native sources and privacy for launch review" merged to main - Launch review prep: native sources, privacy declarations, and official approved icons. Merge commit 1947ecb79da441a73d948bae0b499e41cbe90fd7.
